@@ -53,3 +53,41 @@ function renderColor(arr) {
   });
 }
 renderColor(allColors);
+
+// London Stone Exercise 2
+
+// Issues
+// 1. Assignment to a constant variable
+// spanEl = document.createElement('span');
+
+// 2. there is a spell mismatch of showroomQS
+// showroomQs = location.href.split("showrooms=")[1];
+
+// 3. there is another spell mismatch of nationwideShowrooms
+// let natoinwideShowrooms = [];
+
+// Here is a working Example of the code
+
+// function displayShowrooms() {
+//   let nationwideShowrooms = [];
+//   let showroomQS = "";
+//   var showroomCount = "1";
+//   if (location.href.indexOf("showrooms") !== -1) {
+//     showroomQS = location.href.split("showrooms=")[1];
+//     nationwideShowrooms = showroomQS.split(",");
+//     nationwideShowrooms.forEach(function (showroom) {
+//       const insertElement = document.getElementById("contentArea");
+//       const divEl = document.createElement("div");
+//       const spanEl = document.createElement("span");
+//       spanEl.innerHTML = "(" + showroomCount + "). ";
+//       divEl.append(spanEl);
+//       spanEl.innerHTML = showroom.charAt(0).toUpperCase() + showroom.slice(1);
+
+//       divEl.append(spanEl);
+//       insertElement.append(divEl);
+
+//       showroomCount = showroomCount + 1;
+//     });
+//   }
+// }
+// displayShowrooms();
