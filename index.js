@@ -66,13 +66,20 @@ renderColor(allColors);
 // 3. there is another spell mismatch of nationwideShowrooms
 // let natoinwideShowrooms = [];
 
+// 4. showrooms text is already present in the url, the condition will be true without passing query params
+// https://www.londonstone.co.uk/show-showrooms/
+// if (location.href.indexOf("showrooms") !== -1)
+// a safer alternative would be using URLSearchParams interface webAPI
+// const searchParams = new URLSearchParams(window.location.search);
+// or can use if (location.href.indexOf("showrooms=") !== -1)
+
 // Here is a working Example of the code
 
 // function displayShowrooms() {
 //   let nationwideShowrooms = [];
 //   let showroomQS = "";
 //   var showroomCount = "1";
-//   if (location.href.indexOf("showrooms") !== -1) {
+//   if (location.href.indexOf("showrooms=") !== -1) {
 //     showroomQS = location.href.split("showrooms=")[1];
 //     nationwideShowrooms = showroomQS.split(",");
 //     nationwideShowrooms.forEach(function (showroom) {
